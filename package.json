@@ -1,0 +1,38 @@
+{
+  "name": "svgicon2font",
+  "version": "0.0.1",
+  "description": "svg icons package to web font",
+  "main": "lib/svgicon2font.js",
+  "types": "types",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "clean": "rm -rf types/ lib/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhongqc/svgicon2font.git"
+  },
+  "keywords": [
+    "svg",
+    "icon",
+    "font"
+  ],
+  "author": "zhongqc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhongqc/svgicon2font/issues"
+  },
+  "homepage": "https://github.com/zhongqc/svgicon2font#readme",
+  "devDependencies": {
+    "rollup": "^1.11.3",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-typescript2": "^0.21.1"
+  },
+  "dependencies": {
+    "svg2ttf": "^4.2.0",
+    "svgicons2svgfont": "^9.0.4",
+    "typescript": "^3.4.5"
+  }
+}

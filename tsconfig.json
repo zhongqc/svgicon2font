@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "paths": { "*": ["types/*"] },
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "removeComments": false,
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "lib": ["es7"],
+    "skipLibCheck": true,
+    "typeRoots": ["node", "node_modules/@types", "./typings"],
+    "declaration": true,
+    "declarationDir": "./types",
+    "strict": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
