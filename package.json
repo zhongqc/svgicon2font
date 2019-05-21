@@ -2,7 +2,7 @@
   "name": "svgicon2font",
   "version": "0.0.1",
   "description": "svg icons package to web font",
-  "main": "lib/svgicon2font.js",
+  "main": "lib/index.js",
   "types": "types",
   "scripts": {
     "build": "rollup -c rollup.config.js",
@@ -28,11 +28,11 @@
     "rollup": "^1.11.3",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-node-resolve": "^5.0.0",
-    "rollup-plugin-typescript2": "^0.21.1"
+    "rollup-plugin-typescript2": "^0.21.1",
+    "typescript": "^3.4.5"
   },
   "dependencies": {
     "svg2ttf": "^4.2.0",
-    "svgicons2svgfont": "^9.0.4",
-    "typescript": "^3.4.5"
+    "svgicons2svgfont": "^9.0.4"
   }
 }
