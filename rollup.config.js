@@ -27,5 +27,5 @@ export default {
     resolve(),
     commonjs()
   ],
-  external: ['fs', 'path', 'svgicons2svgfont', 'svg2ttf']
+  external: ['fs', 'path', 'svgicons2svgfont', 'svg2ttf', 'ttf2eot', 'ttf2woff', 'ttf2woff2']
 }
