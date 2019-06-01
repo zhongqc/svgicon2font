@@ -19,6 +19,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/ttf2woff2@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/@types/ttf2woff2/download/@types/ttf2woff2-2.0.0.tgz#a95910a32f6d293350a1edb93a84bb540d4a3e3b"
+  integrity sha1-qVkQoy9tKTNQoe25OoS7VA1KPjs=
+  dependencies:
+    "@types/node" "*"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/abbrev/download/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
