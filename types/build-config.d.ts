@@ -1,10 +1,16 @@
-declare enum FontFormat {
-    ttf = "ttf",
-    svg = "svg",
+export declare enum FontFormat {
     eot = "eot",
+    woff2 = "woff2",
     woff = "woff",
-    woff2 = "woff2"
+    ttf = "ttf"
 }
+export declare const FontFormatConfig: {
+    [key: string]: {
+        contentType: string;
+        extensionName: string;
+        formatString: string;
+    };
+};
 export interface SVGIcon2FontConfig {
     entry: string;
     output: string;
@@ -16,4 +22,3 @@ export interface SVGIcon2FontConfig {
     startUnicode?: number;
 }
 export default function (config: SVGIcon2FontConfig): SVGIcon2FontConfig;
-export {};
