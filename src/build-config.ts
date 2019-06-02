@@ -1,8 +1,7 @@
 const path = require('path')
 
-enum FontFormat {
+export enum FontFormat {
   ttf = 'ttf',
-  svg = 'svg',
   eot = 'eot',
   woff = 'woff',
   woff2 = 'woff2'
@@ -31,5 +30,6 @@ const defaultConfig: SVGIcon2FontConfig = {
 }
 
 export default function (config: SVGIcon2FontConfig) {
-  return Object.assign({}, config, defaultConfig)
+  console.log(config, defaultConfig, Object.assign({}, defaultConfig, config))
+  return Object.assign({}, defaultConfig, config)
 }
