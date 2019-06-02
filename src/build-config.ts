@@ -1,10 +1,39 @@
 const path = require('path')
 
 export enum FontFormat {
-  ttf = 'ttf',
   eot = 'eot',
+  woff2 = 'woff2',
   woff = 'woff',
-  woff2 = 'woff2'
+  ttf = 'ttf',
+}
+
+export const FontFormatConfig: {
+  [key: string]: {
+    contentType: string,
+    extensionName: string,
+    formatString: string
+  }
+} = {
+  [FontFormat.eot]: {
+    contentType: 'application/x-font-eot',
+    extensionName: 'eot',
+    formatString: 'embedded-opentype'
+  },
+  [FontFormat.woff2]: {
+    contentType: 'application/x-font-woff2',
+    extensionName: 'woff2',
+    formatString: 'woff2'
+  },
+  [FontFormat.woff]: {
+    contentType: 'application/x-font-woff',
+    extensionName: 'woff',
+    formatString: 'woff'
+  },
+  [FontFormat.ttf]: {
+    contentType: 'application/x-font-ttf',
+    extensionName: 'ttf',
+    formatString: 'truetype'
+  }
 }
 
 export interface SVGIcon2FontConfig {
@@ -30,6 +59,5 @@ const defaultConfig: SVGIcon2FontConfig = {
 }
 
 export default function (config: SVGIcon2FontConfig) {
-  console.log(config, defaultConfig, Object.assign({}, defaultConfig, config))
   return Object.assign({}, defaultConfig, config)
 }
