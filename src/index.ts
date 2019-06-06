@@ -5,8 +5,7 @@ import svg2ttf from 'svg2ttf'
 import ttf2eot from 'ttf2eot'
 import ttf2woff from 'ttf2woff'
 import ttf2woff2 from 'ttf2woff2'
-import { SVGIcon2FontConfig, FontFormat, FontFormatConfig } from './build-config'
-import buildConfig from './build-config'
+import { buildConfig, SVGIcon2FontConfig, FontFormat, FontFormatConfig } from './build-config'
 
 interface IconItem {
   name: string,
@@ -185,7 +184,7 @@ class SVGIcon2Font {
   }
 }
 
-export default function (initinalConfig: SVGIcon2FontConfig) {
+export function svgIcon2Font (initinalConfig: SVGIcon2FontConfig) {
   let svgIcon2Font = new SVGIcon2Font(initinalConfig)
   svgIcon2Font.writeFile()
 }

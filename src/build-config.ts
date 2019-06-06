@@ -58,6 +58,6 @@ const defaultConfig: SVGIcon2FontConfig = {
   startUnicode: 0xea01,
 }
 
-export default function (config: SVGIcon2FontConfig) {
+export function buildConfig (config: SVGIcon2FontConfig) {
   return Object.assign({}, defaultConfig, config)
 }
