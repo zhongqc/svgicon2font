@@ -1,4 +1,4 @@
-const svgIcon2Font = require('../lib/index')
+const svgIcon2Font = require('../lib/index').svgIcon2Font
 
 svgIcon2Font({
   formats: [

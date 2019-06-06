@@ -10,7 +10,7 @@ yarn add svgicon2font
 ```
 example
 ```typescript
-const svgIcon2Font = require('svgicon2font')
+const svgIcon2Font = require('svgicon2font').svgIcon2Font
 
 /**
  * @param {SVGIcon2FontConfig} initinalConfig
