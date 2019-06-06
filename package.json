@@ -1,6 +1,6 @@
 {
   "name": "svgicon2font",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "svg icons package to web font",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
