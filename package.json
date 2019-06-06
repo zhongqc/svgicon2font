@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "svg icons package to web font",
   "main": "lib/index.js",
-  "types": "types",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "clean": "rm -rf types/ lib/",

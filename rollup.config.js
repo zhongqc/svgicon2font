@@ -16,16 +16,13 @@ export default {
   output: {
     file: 'lib/index.js',
     format: 'cjs',
-    name: 'SVGIcon2Font',
     sourcemap: true,
     banner
   },
   plugins: [
-    typescript({
-      useTsconfigDeclarationDir: true
-    }),
     resolve(),
-    commonjs()
+    commonjs(),
+    typescript()
   ],
   external: ['fs', 'path', 'svgicons2svgfont', 'svg2ttf', 'ttf2eot', 'ttf2woff', 'ttf2woff2']
 }

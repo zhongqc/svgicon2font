@@ -17,7 +17,6 @@
     "skipLibCheck": true,
     "typeRoots": ["node", "node_modules/@types", "./typings"],
     "declaration": true,
-    "declarationDir": "./types",
     "strict": true
   },
   "exclude": [
