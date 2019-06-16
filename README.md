@@ -28,6 +28,12 @@ const svgIcon2Font = require('svgicon2font').svgIcon2Font
  * }
  */
 svgIcon2Font(initinalConfig: SVGIcon2FontConfig)
+```
+or
+```typescript
+svgIcon2Font(initinalConfig: SVGIcon2FontConfig).then(() => {
+  // execute after build
+})
 
 ```
 
