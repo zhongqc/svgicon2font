@@ -184,7 +184,7 @@ class SVGIcon2Font {
   }
 }
 
-export function svgIcon2Font (initinalConfig: SVGIcon2FontConfig) {
+export function svgIcon2Font (initinalConfig: SVGIcon2FontConfig): Promise<void> {
   let svgIcon2Font = new SVGIcon2Font(initinalConfig)
-  svgIcon2Font.writeFile()
+  return svgIcon2Font.writeFile()
 }
